@@ -7,5 +7,27 @@
 .App {
   text-align: center;
   margin: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.inputForm {
+  border: 1px solid black;
+  padding: 1vh;
+  width: 30vw;
+  border-radius: 1vh;
+  background-color: rgba(218, 165, 32, 0.571);
+}
+
+li {
+  list-style: none;
+  margin: 1vh;
+  border: 1px solid black;
+  width: 30vw;
+  background-color: rgba(222, 184, 135, 0.464);
+  border-radius: 1vh;
+  padding: 1vh;
 }
 
