@@ -1,12 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Overview = (props) => {
-  const { tasks } = props;
+  const { tasks, deleteItem } = props;
 
   return (
     <ul>
       {tasks.map((task) => {
-        return <li key={task.id}>{task.listNumber} {task.text}</li>;
+        return <li 
+                  key={task.id}
+                  className="listItem"
+                >
+                  {task.listNumber}.
+                  {" "} 
+                  {task.text}
+                  <button className="deleteBtn" onClick={() => deleteItem}>Delete</button>
+                </li>;
       })}
     </ul>
   );

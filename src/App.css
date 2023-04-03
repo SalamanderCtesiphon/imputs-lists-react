@@ -27,5 +27,8 @@ li {
   background-color: rgba(222, 184, 135, 0.464);
   border-radius: 1vh;
   padding: 1vh;
+  display: flex;
+  justify-content: space-between;
 }
+
 

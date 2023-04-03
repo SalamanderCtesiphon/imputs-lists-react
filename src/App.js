@@ -38,13 +38,16 @@ class App extends Component {
         listNumber: this.state.task.listNumber + 1,
         id: uniqid()
       },
-    })
-    
+    }) 
+  }
+
+  deleteItem = (e) => {
+    console.log('hi');
   }
   
   render() {
 
-    const { task, tasks } = this.state;
+    const { task, tasks, deleteItem } = this.state;
 
     return (
       <div className="App">
@@ -60,7 +63,7 @@ class App extends Component {
             <button type='submit'>Add Task</button>
           </form>
         </div>
-        <Overview tasks={tasks}/>
+        <Overview tasks={tasks} deleteItem={deleteItem}/>
       </div>
     );
   }
