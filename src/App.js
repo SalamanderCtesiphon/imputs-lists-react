@@ -10,6 +10,7 @@ class App extends Component {
     this.state = {
       task: { 
         text: '',
+        listNumber: 1,
         id: uniqid()
       },
       tasks: [],
@@ -23,6 +24,7 @@ class App extends Component {
       task: {
         text: e.target.value,
         id: this.state.task.id,
+        listNumber: this.state.task.listNumber,
       }
     });
   };
@@ -33,6 +35,7 @@ class App extends Component {
       tasks: this.state.tasks.concat(this.state.task),
       task: { 
         text: '',
+        listNumber: this.state.task.listNumber + 1,
         id: uniqid()
       },
     })
