@@ -1,12 +1,19 @@
-
+import React, { Component } from 'react';
+import Overview from './components/Overview';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    return (
+      <div className="App">
+        <Overview />
+      </div>
+    );
+  }
 }
 
 export default App;
