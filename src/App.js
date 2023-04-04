@@ -42,6 +42,7 @@ class App extends Component {
   }
 
   deleteItem = (id) => {
+    console.log(id.target);
     this.setState({
       tasks: this.state.tasks.filter((task) => task.id !==id)
     })
