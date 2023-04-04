@@ -41,13 +41,13 @@ class App extends Component {
     }) 
   }
 
-  deleteItem = (e) => {
-    console.log('hi');
+  deleteItem = (id) => {
+    console.log(this.state.task);
   }
   
   render() {
 
-    const { task, tasks, deleteItem } = this.state;
+    const { task, tasks } = this.state;
 
     return (
       <div className="App">
@@ -63,7 +63,7 @@ class App extends Component {
             <button type='submit'>Add Task</button>
           </form>
         </div>
-        <Overview tasks={tasks} deleteItem={deleteItem}/>
+        <Overview tasks={tasks} deleteItem={this.deleteItem}/>
       </div>
     );
   }

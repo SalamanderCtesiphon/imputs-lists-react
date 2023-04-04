@@ -13,7 +13,7 @@ const Overview = (props) => {
                   {task.listNumber}.
                   {" "} 
                   {task.text}
-                  <button className="deleteBtn" onClick={() => deleteItem}>Delete</button>
+                  <button className="deleteBtn" onClick={deleteItem}>Delete</button>
                 </li>;
       })}
     </ul>
